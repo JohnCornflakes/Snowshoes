@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "snowshoes",
+  "version": "${version}",
+  "name": "Snowshoes",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/snowshoes/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.JohnCornflakes.snowshoes.client.SnowshoesDataGenerator"
+    ],
+    "client": [
+      "me.JohnCornflakes.snowshoes.client.SnowshoesClient"
+    ],
+    "main": [
+      "me.JohnCornflakes.snowshoes.Snowshoes"
+    ]
+  },
+  "mixins": [
+    "snowshoes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
